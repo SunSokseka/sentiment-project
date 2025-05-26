@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+venv/
+env/
+*.h5
+*.pkl
+.DS_Store
+*.ipynb
+*.csv
+*.safetensors
+sentiment_model/
