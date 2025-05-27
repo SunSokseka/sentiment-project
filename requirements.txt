@@ -2,7 +2,7 @@ streamlit==1.42.2
 pandas==2.2.3
 torch==2.6.0
 transformers==4.49.0
-tensorflow==2.15.0
+tensorflow==2.16.1
 gensim==4.3.3
 spacy==3.8.4
 langdetect==1.0.9
@@ -11,3 +11,11 @@ seaborn==0.13.2
 numpy==1.26.4
 requests==2.32.3
 setuptools==70.0.0
+dateparser==1.2.1
+scikit-learn==1.6.1
+joblib==1.4.2
+selenium==4.28.1
+webdriver-manager==4.0.2
+reportlab
+vaderSentiment
+pyenchant
