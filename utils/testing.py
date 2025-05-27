@@ -187,7 +187,7 @@ except ImportError as e:
     st.stop()
 
 # Load BERT Sentiment Model
-bert_model_path = r"E:\sentiment_analysis\sentiment_model"
+bert_model_path = ".././sentiment_model"
 bert_model = None
 bert_tokenizer = None
 try:
@@ -202,8 +202,8 @@ except Exception as e:
     st.stop()
 
 # Load BiLSTM Model and Tokenizer with detailed error handling
-bilstm_model_path = r"E:\sentiment_analysis\sentiment_model\bilstm.h5"
-tokenizer_path = r"E:\sentiment_analysis\sentiment_model\tokenizer.pkl"
+bilstm_model_path = "../sentiment_model/bilstm.h5"
+tokenizer_path = "../sentiment_model/tokenizer.pkl"
 bilstm_model = None
 bilstm_tokenizer = None
 try:
