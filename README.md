@@ -4,6 +4,53 @@ This project performs **sentiment analysis** and **topic modeling** on text data
 
 ---
 
+## Features and Functionality
+
+### Data Collection
+
+- **Web Scraping**: Collect text data from the web using a custom-built web scraping module.
+- **Data Annotation**: Annotate text data for sentiment analysis.
+
+### Preprocessing
+
+- **Text Cleaning**: Remove stop words, punctuation, and special characters from text data.
+- **Tokenization**: Split text data into individual words and phrases.
+- **Lemmatization**: Reduce words to their base form (e.g., "running" becomes "run").
+
+### Sentiment Analysis
+
+- **BERT Model**: Utilize pre-trained BERT-based models for sentiment analysis.
+- **BiLSTM Model**: Implement a BiLSTM-based model for sentiment analysis.
+
+### Topic Modeling
+
+- **Latent Dirichlet Allocation (LDA)**: Apply LDA to identify topics in text data.
+- **Latent Semantic Analysis (LSA)**: Use LSA to identify underlying topics and relationships.
+- **Non-negative Matrix Factorization (NMF)**: Apply NMF to identify topics in text data.
+
+### Visualization
+
+- **Interactive Dashboard**: Create an interactive dashboard using Streamlit, enabling users to visualize and explore sentiment and topic results.
+- **Bubble Charts**: Visualize sentiment and topic distributions using bubble charts.
+
+## Technology Stack
+
+- **Languages**: Python, Shell
+- **Frameworks and Libraries**: NLTK, spaCy, scikit-learn, TensorFlow, PyTorch
+
+## Installation and Setup
+
+1. **Prerequisites**: Install Python 3.8+ and the required libraries mentioned above.
+2. **Step-by-Step Installation**: Clone the repository and install required packages using `pip install -r requirements.txt`.
+3. **Environment Configuration**: Set up your environment by creating a new virtual environment using `python -m venv myenv` and activating it.
+4. **How to Run the Project Locally**: Run the project by executing `streamlit run app.py` in the terminal.
+
+## Usage Examples
+
+1. **Basic Usage**: Run `streamlit run app.py` to launch the interactive dashboard.
+2. **Code Examples**: Explore the codebase to find examples of each feature and functionality.
+3. **Common Use Cases**: Use the project for sentiment analysis and topic modeling in various domains, such as customer feedback analysis, social media monitoring, or market research.
+
 ## Project Structure
 
 The project is organized as follows:
