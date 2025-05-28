@@ -41,8 +41,8 @@ except ImportError:
 # Set page config as the first Streamlit command
 st.set_page_config(layout="wide")
 
-# Add the root directory of the project to sys.path
-sys.path.append(os.path.abspath(os.path.join(os.getcwd(), "..")))
+# Add both current and parent directory to sys.path for better compatibility
+sys.path.append(os.path.abspath(os.path.join(os.getcwd(), ".")))
 
 # Import Preprocessing Functions
 from data_preprocessing.text_cleaning import clean_text
@@ -187,7 +187,7 @@ except ImportError as e:
     st.stop()
 
 # Load BERT Sentiment Model
-bert_model_path = "/Users/sophana/Documents/BookMeBus/sentiment-project/sentiment_model"
+bert_model_path = "./sentiment_model"
 bert_model = None
 bert_tokenizer = None
 try:
@@ -255,9 +255,9 @@ except Exception as e:
     traceback.print_exc()
 
 # Load LDA Model, Dictionary, and Topic Names
-lda_model_path = r"E:\sentiment_analysis\models\lda_model"
-dictionary_path = r"E:\sentiment_analysis\models\lda_dictionary"
-topic_names_path = r"E:\sentiment_analysis\models\lda_topic_names.txt"
+lda_model_path = r"./models/lda_model"
+dictionary_path = r"./models/lda_dictionary"
+topic_names_path = r"./models/lda_topic_names.txt"
 
 lda_model = None
 dictionary = None
