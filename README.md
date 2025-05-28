@@ -43,16 +43,10 @@ This project performs **sentiment analysis** and **topic modeling** on text data
 
 ## Installation and Setup
 
-1. **Prerequisites**: Install Python 3.8+ and the required libraries mentioned above.
-2. **Step-by-Step Installation**: Clone the repository and install required packages using `pip install -r requirements.txt`.
-3. **Environment Configuration**: Set up your environment by creating a new virtual environment using `python -m venv myenv` and activating it.
+1. **Prerequisites**: Install Python `3.12.9` and the required libraries mentioned above.
+2. **Environment Configuration**: Set up your environment by creating a new virtual environment using `python -m venv myenv` and activating it.
+3. **Step-by-Step Installation**: Clone the repository and install required packages using `pip install -r requirements.txt`.
 4. **How to Run the Project Locally**: Run the project by executing `streamlit run utils/app.py` in the terminal.
-
-## Usage Examples
-
-1. **Basic Usage**: Run `streamlit run app.py` to launch the interactive dashboard.
-2. **Code Examples**: Explore the codebase to find examples of each feature and functionality.
-3. **Common Use Cases**: Use the project for sentiment analysis and topic modeling in various domains, such as customer feedback analysis, social media monitoring, or market research.
 
 ## Project Structure
 ![Project workflow](project_structure.png)
@@ -123,10 +117,10 @@ The project is organized as follows:
 - **Fine-tuning model**: 
    1. **Datasource**: new dataset
    2. **Data annotation**: 
-      - run data_preprocessing.ipynb in notebook folder, run all cells in the notebook
-      - you will get annotated_data.csv
+      - run `data_preprocessing.ipynb` in notebook folder, run all cells in the notebook
+      - you will get `annotated_data.csv`
       - check the label and modify the label if necessary for model better performance
    3. **Model training**:
       - fine tune BERT model using the flow in bert.ipynb with the your desired annotated dataset
       - you can try with different hyper-parameter (epoch, batch size or learning rate) and compare its performance
-      - after saved your trained model, replace it in the app.py in utils folder, to test in streamlit
+      - after saved your trained model, replace it in the `app.py` in utils folder, to test in streamlit by run `streamlit run utils/app.py`
