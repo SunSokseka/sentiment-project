@@ -9,13 +9,16 @@ This project performs **sentiment analysis** and **topic modeling** on text data
 ### Data Collection
 
 - **Web Scraping**: Collect text data from the web using a custom-built web scraping module.
-- **Data Annotation**: Annotate text data for sentiment analysis.
 
 ### Preprocessing
 
+- **Check and handle nulls and duplicates**: clean and remove any noises consisted in dataset, prepared for model training and analysis.
+- **Date Datatype**: The datatype of date has to be datetime datatype, wrong format otherwise.
+- **Language Detection**: Review feedback will get only English text for model training and analysis, the rest that are non-english will be labeled base on its rating value.
 - **Text Cleaning**: Remove stop words, punctuation, and special characters from text data.
 - **Tokenization**: Split text data into individual words and phrases.
 - **Lemmatization**: Reduce words to their base form (e.g., "running" becomes "run").
+- **Wordembedding**: convert text into vector-based value, for model training and topic modeling..
 
 ### Sentiment Analysis
 
@@ -52,6 +55,7 @@ This project performs **sentiment analysis** and **topic modeling** on text data
 3. **Common Use Cases**: Use the project for sentiment analysis and topic modeling in various domains, such as customer feedback analysis, social media monitoring, or market research.
 
 ## Project Structure
+![Project workflow](project_structure.png)
 
 The project is organized as follows:
 
@@ -114,3 +118,15 @@ The project is organized as follows:
 
 ---
 
+## Future work roadmap
+
+- **Fine-tuning model**: 
+   1. **Datasource**: new dataset
+   2. **Data annotation**: 
+      - run data_preprocessing.ipynb in notebook folder, run all cells in the notebook
+      - you will get annotated_data.csv
+      - check the label and modify the label if necessary for model better performance
+   3. **Model training**:
+      - fine tune BERT model using the flow in bert.ipynb with the your desired annotated dataset
+      - you can try with different hyper-parameter (epoch, batch size or learning rate) and compare its performance
+      - after saved your trained model, replace it in the app.py in utils folder, to test in streamlit
