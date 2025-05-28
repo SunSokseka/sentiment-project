@@ -43,7 +43,7 @@ This project performs **sentiment analysis** and **topic modeling** on text data
 1. **Prerequisites**: Install Python 3.8+ and the required libraries mentioned above.
 2. **Step-by-Step Installation**: Clone the repository and install required packages using `pip install -r requirements.txt`.
 3. **Environment Configuration**: Set up your environment by creating a new virtual environment using `python -m venv myenv` and activating it.
-4. **How to Run the Project Locally**: Run the project by executing `streamlit run app.py` in the terminal.
+4. **How to Run the Project Locally**: Run the project by executing `streamlit run utils/app.py` in the terminal.
 
 ## Usage Examples
 
